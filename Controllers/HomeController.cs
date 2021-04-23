@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using WAD_Assignment.Models;
 using WAD_Assignment1.Models;
 
 namespace WAD_Assignment1.Controllers
@@ -12,10 +13,12 @@ namespace WAD_Assignment1.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext context)
         {
             _logger = logger;
+            _context = context;
         }
 
         public IActionResult Index()
@@ -23,9 +26,11 @@ namespace WAD_Assignment1.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult AllRecipes()
         {
-            return View();
+
+            List<Recipe> model = _context.Recipes.ToList();
+            return View(model);
         }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]

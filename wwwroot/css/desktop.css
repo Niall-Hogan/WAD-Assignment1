@@ -93,3 +93,18 @@ h2 {
         border-left: none;
     }
 }
+
+@media screen and (min-width: 720px) {
+    .RecipeFlexContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    .RecipeContainer {
+        border: solid black 2px;
+    }
+}
