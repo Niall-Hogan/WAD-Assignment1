@@ -50,13 +50,18 @@ h2 {
         height: 30px;
         background: rgba(0, 0, 0, 0.5);
         position: relative;
-        top: 90px;
+        top: 96px;
+        border-top: solid white 2px;
+        border-bottom: solid white 2px;
     }
 }
 
 @media screen and (min-width: 720px) {
     nav ul {
         flex-direction: row;
+        box-sizing: border-box;
+        position: relative;
+        top: -10px;
     }
 }
 
@@ -80,11 +85,10 @@ h2 {
         padding-left: 10px;
         padding-right: 10px;
         border: none;
-        border-left: 1px solid #000;
+        border-left: 1px solid #fff;
         font-family: "Raleway", sans-serif;
         color: white;
-        position: relative;
-        top: 5px;
+       
     }
 }
 
@@ -106,5 +110,15 @@ h2 {
 @media screen and (min-width: 720px) {
     .RecipeContainer {
         border: solid black 2px;
+        width:300px;
+        padding:10px;
+    }
+}
+
+@media screen and (min-width: 720px) {
+    footer {
+        background-image: url(../images/header.jpeg);
+        height: 200px;
+        padding-left: 0;
     }
 }

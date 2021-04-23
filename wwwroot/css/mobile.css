@@ -117,10 +117,36 @@ a:visited {
     }
 }
 
-@media screen and (min-width: 720px) {
-    .footer {
+@media screen and (max-width: 720px) {
+    footer {
         background-image: url(../images/header.jpeg);
-        height: 200px;
+        height: 100px;
         padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .RecipeFlexContainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .RecipeContainer {
+        border: solid black 2px;
+        width: 100%;
+        padding: 10px;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .RecipeImage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

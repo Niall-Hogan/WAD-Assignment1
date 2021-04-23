@@ -10,7 +10,6 @@ namespace WAD_Assignment.Models
     public class Recipe
     {
 
-        List<string> AllIngs;
 
         [Key]
         [Column(TypeName = "smallint")]
