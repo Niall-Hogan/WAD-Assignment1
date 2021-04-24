@@ -33,5 +33,36 @@ namespace WAD_Assignment1.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult AddRecipe(RecipeForm model)
+        {
+            int recID = _context.Recipes.ToList().Count() + 1;
+
+            Recipe newRecipe = new Recipe
+            {
+                RecipeID = recID,
+                Title = model.Title,
+                Image = model.Image,
+                PublishDate = DateTime.Now,
+                CookingTime = model.CookingTime,
+                Step1 = model.Step1,
+                Step2 = model.Step2,
+                Step3 = model.Step3,
+                Step4 = model.Step4,
+                Ingredient1 = model.Ingredient1,
+                Ingredient2 = model.Ingredient2,
+                Ingredient3 = model.Ingredient3,
+                Ingredient4 = model.Ingredient4,
+                Ingredient5 = model.Ingredient5,
+                Ingredient6 = model.Ingredient6,
+                Ingredient7 = model.Ingredient7,
+
+            };
+            _context.Add(newRecipe);
+            _context.SaveChanges();
+            return RedirectToAction(nameof(Index));
+          
+        }
     }
 }
