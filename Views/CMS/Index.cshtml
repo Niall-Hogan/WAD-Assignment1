@@ -17,8 +17,8 @@
         <tr>
 
         <td>@item.Title</td>
-        <td>Update</td>
-        <td>Delete</td>
+        <td><a asp-controller="CMS" asp-action="UpdateRecipe" asp-route-id="@item.RecipeID" class="edit">Update</a></td>
+        <td><a asp-controller="CMS" asp-action="DeleteRecipe" asp-route-id="@item.RecipeID" class="delete">Delete</a></td>
         </tr>
     }
 </table>

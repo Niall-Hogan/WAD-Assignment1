@@ -1,0 +1,17 @@
+﻿@model WAD_Assignment.Models.Recipe
+@{
+    Layout = "_CMS";
+
+}
+
+<form method="post">
+
+    <input type="hidden" name="RecipeID" value="@Model.RecipeID" />
+
+    <p>Delete film @Model.Title?</p>
+
+    <p><input type="submit" value="Delete" class="delete" /></p>
+
+    <p><a asp-controller="CMS" asp-action="Index" class="add">Keep</a><br></p>
+
+</form>
