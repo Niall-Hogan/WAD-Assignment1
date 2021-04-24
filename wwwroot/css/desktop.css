@@ -122,3 +122,34 @@ h2 {
         padding-left: 0;
     }
 }
+
+    .CmsTable {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+
+    .CmsTable td, .CmsTable th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+
+    .CmsTable tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+
+    .CmsTable tr:hover {
+        background-color: #ddd;
+    }
+
+
+    .CmsTable th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #4CAF50;
+        color: white;
+    }

@@ -1,0 +1,24 @@
+﻿@{ 
+    Layout = "_CMS";
+}
+
+<h1>All Recipes</h1>
+
+
+<table class="CmsTable">
+    <tr>
+        <th>Recipe Title</th>
+        <th>Edit</th>
+        <th>Delete</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+        <td>@item.Title</td>
+        <td>Update</td>
+        <td>Delete</td>
+        </tr>
+    }
+</table>
