@@ -12,7 +12,6 @@ h2 {
     .siteContainer {
         margin: auto;
         max-width: 1200px;
-        min-width: 600px;
     }
 }
 /* Header image + nav*/
@@ -92,6 +91,8 @@ h2 {
     }
 }
 
+
+
 @media screen and (min-width: 720px) {
     nav li:first-child {
         border-left: none;
@@ -153,3 +154,4 @@ h2 {
         background-color: #4CAF50;
         color: white;
     }
+

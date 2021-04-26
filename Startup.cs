@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using WAD_Assignment1.Models;
+using WAD_Assignment1.Security;
 
 namespace WAD_Assignment1
 {
@@ -28,7 +29,19 @@ namespace WAD_Assignment1
             services.AddControllersWithViews();
 
             services.AddDbContext<ApplicationDbContext>(options =>
-           options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); // Makes Dependency injection possible
+                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); // Makes Dependency injection possible
+
+            services.AddDbContext<AppIdentityDbContext>(options =>
+                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"))); // For Identity services
+
+            services.AddIdentity<AppIdentityUser, AppIdentityRole>()
+                .AddEntityFrameworkStores<AppIdentityDbContext>();
+
+            services.ConfigureApplicationCookie(opt =>
+            {
+                opt.LoginPath = "/Security/SignIn";
+                opt.AccessDeniedPath = "/Security/AccessDenied";
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -49,6 +62,7 @@ namespace WAD_Assignment1
 
             app.UseRouting();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

@@ -82,3 +82,9 @@ C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\WAD-Assignment1.csprojAssemblyReference.cache
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\CMS\UpdateRecipe.cshtml.g.cs
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\CMS\DeleteRecipe.cshtml.g.cs
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\Security\Register.cshtml.g.cs
