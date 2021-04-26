@@ -6,9 +6,12 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using WAD_Assignment.Models;
 using WAD_Assignment1.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authorization;
 
 namespace WAD_Assignment1.Controllers
 {
+    [Authorize(Roles = "Registered User")]
     public class CMSController : Controller
     {
 

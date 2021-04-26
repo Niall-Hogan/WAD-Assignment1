@@ -35,14 +35,24 @@
 
 
         <div class="mainContainer">
-            <main role="main" class="pb-3">
-                @RenderBody()
-            </main>
-        </div>
+            <div class="signInContainer">
 
-        <footer class="footer">
-        </footer>
-    </div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <form asp-controller="Security" asp-action="SignOut" method="post">
+                        <button type="submit" id="loginBtn">Log Out</button>
+                    </form>
+                }
+
+                </div>
+                <main role="main" class="pb-3">
+                    @RenderBody()
+                </main>
+            </div>
+
+            <footer class="footer">
+            </footer>
+        </div>
 
     <script src="~/js/jquery-3.4.1.min.js"></script>
     <script src="~/js/site.js"></script>

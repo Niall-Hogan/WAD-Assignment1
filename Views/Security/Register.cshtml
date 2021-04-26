@@ -4,7 +4,7 @@
 }
 
 <h2>Create New User Account</h2>
-<form method="post">
+<form class="registerForm" method="post">
     <table>
         <tr>
             <td><label asp-for="UserName"></label></td>
@@ -32,7 +32,7 @@
             </td>
         </tr>
     </table>
-    <div asp-validation-summary="All" class="message"></div>
+    @*<div asp-validation-summary="All" class="message"></div>*@
 
     <h3><a asp-page="/Security/SignIn">Go To Sign-In Page</a></h3>
 

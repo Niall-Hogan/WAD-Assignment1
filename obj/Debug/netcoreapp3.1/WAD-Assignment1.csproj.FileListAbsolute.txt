@@ -9,6 +9,9 @@ C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\WAD-Assignment1.Views.dll
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\WAD-Assignment1.Views.pdb
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Humanizer.dll
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -20,6 +23,8 @@ C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
@@ -63,9 +68,14 @@ C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\WAD-Assignment1.TagHelpers.output.cache
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\WAD-Assignment1.RazorCoreGenerate.cache
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\CMS\AddRecipe.cshtml.g.cs
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\CMS\DeleteRecipe.cshtml.g.cs
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\CMS\Index.cshtml.g.cs
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\CMS\UpdateRecipe.cshtml.g.cs
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\Home\AllRecipes.cshtml.g.cs
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\Security\AcessDenied.cshtml.g.cs
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\Security\Register.cshtml.g.cs
+C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\Security\SignIn.cshtml.g.cs
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CMS.cshtml.g.cs
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -80,11 +90,3 @@ C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\WAD-Assignment1.pdb
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\WAD-Assignment1.genruntimeconfig.cache
 C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\WAD-Assignment1.csprojAssemblyReference.cache
-C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\CMS\UpdateRecipe.cshtml.g.cs
-C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\CMS\DeleteRecipe.cshtml.g.cs
-C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
-C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
-C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
-C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
-C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
-C:\Users\niall\source\repos\WAD-Assignment1\WAD-Assignment1\obj\Debug\netcoreapp3.1\Razor\Views\Security\Register.cshtml.g.cs

@@ -12,6 +12,7 @@
 <body>
 
     <div class="siteContainer">
+      
         <header title="Table of Food">
             <h1 id="siteHeading"> Recipe Website</h1>
             <nav>
@@ -19,8 +20,7 @@
                     <li><a asp-area="" asp-controller="Home" asp-action="Index">Home</a></li>
                     <li><a asp-area="" asp-controller="Home" asp-action="AllRecipes">All Recipes</a></li>
                     <li><a asp-area="" asp-controller="CMS" asp-action="Index">CMS Page</a></li>
-                    <li><a asp-controller="Security" asp-action="Register">Register</a></li>
-
+                  
                 </ul>
                 
             </nav>
@@ -38,6 +38,24 @@
 
 
         <div class="mainContainer">
+            <div class="signInContainer">
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <form asp-controller="Security" asp-action="SignOut" method="post">
+                        <button type="submit" id="loginBtn">Log Out</button>
+                    </form>
+                }
+                else
+                {
+                    <form asp-controller="Security" asp-action="SignIn" method="post">
+
+                        <button id="loginBtn">Log In</button>
+                        </form>
+                        }
+
+
+                </div>
             <main role="main" class="pb-3">
                 @RenderBody()
             </main>

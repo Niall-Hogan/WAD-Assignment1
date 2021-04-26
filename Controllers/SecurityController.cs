@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using WAD_Assignment1.Models;
@@ -30,6 +31,46 @@ namespace WAD_Assignment1.Controllers
             return View();
         }
 
+        public IActionResult AccessDenied()
+        {
+            return View();
+        }
+
+        public IActionResult SignIn()
+        {
+            return View(); 
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult SignIn(SignIn obj)
+        {
+            if (ModelState.IsValid)
+            {
+                var result = signinManager.PasswordSignInAsync
+                (obj.UserName, obj.Password,
+                    obj.RememberMe, false).Result;
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index", "CMS");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Invalid user details");
+                }
+            }
+            return View(obj);
+        }
+
+        [HttpPost]
+        [Authorize]
+        [ValidateAntiForgeryToken]
+        public IActionResult SignOut()
+        {
+            signinManager.SignOutAsync().Wait();
+            return RedirectToAction(nameof(SignIn));
+        }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
