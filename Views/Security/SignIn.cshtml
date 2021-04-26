@@ -1,26 +1,26 @@
 ﻿@model SignIn
 
-<h2 class="fullWidth">Sign In</h2>
-<section>
-    <form asp-controller="Security" asp-action="SignIn" method="post">
+<h1 class="contentTitle">Sign In</h1>
+<section >
+    <form class="signIn"asp-controller="Security" asp-action="SignIn" method="post">
         <div>
-            <label asp-for="UserName"></label>
-            <input type="text" asp-for="UserName" />
+            <label class = "signLbl" asp-for="UserName">Username</label>
+            <input class ="signInField"type="text" asp-for="UserName" />
         </div>
         <div>
-            <label asp-for="Password"></label>
-            <input type="password" asp-for="Password" />
+            <label class = "signLbl" asp-for="Password">Password</label>
+            <input class ="signInField"type="password" asp-for="Password" />
         </div>
         <div>
-            <label asp-for="RememberMe"></label>
+            <label class = "signLbl"asp-for="RememberMe">Remember Me</label>
             <input type="checkbox" asp-for="RememberMe" />
         </div>
         <div>
-            <button type="submit" class="add">Sign In</button>
-        </div>
-        <div asp-validation-summary="All" class="message"></div>
+            <button type="submit" class="signInBtn">Sign In</button>
+            <button asp-controller="security" asp-action="register" type="submit" class="signInBtn">Create Account</button>
 
-        <h3><a asp-controller="security" asp-action="register">Create New User Account</a></h3>
+        </div>
+
 
     </form>
 </section> 

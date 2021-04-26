@@ -4,90 +4,90 @@
 
 }
 
-<h1>Add Recipe</h1>
+<h1 class="contentTitle">Add Recipe</h1>
 
-<form asp-controller="CMS" asp-action="UpdateRecipe">
+<form class="signIn" asp-controller="CMS" asp-action="UpdateRecipe">
     <input type="hidden" name="RecipeID" value="@Model.RecipeID" />
 
     <div>
-        <label>Recipe Title</label>
-        <input asp-for="Title" />
+        <label class = "signLbl" >Recipe Title</label>
+        <input class ="signInField" asp-for="Title" />
         <span asp-validation-for="Title" class="error"></span>
 
     </div>
 
     <div>
-        <label asp-for="Image">Recipe Image</label>
-        <input asp-for="Image" />
+        <label class = "signLbl" asp-for="Image">Recipe Image</label>
+        <input class ="signInField" asp-for="Image" />
     </div>
 
     <div>
-        <label asp-for="CookingTime">Cooking Time</label>
-        <input asp-for="CookingTime" />
+        <label class = "signLbl" asp-for="CookingTime">Cooking Time</label>
+        <input class ="signInField" asp-for="CookingTime" />
     </div>
     <div>
-        <label asp-for="PublishDate">Publish Date</label>
-        <input type="date" asp-for="PublishDate" />
-    </div>
-
-    <div>
-        <label asp-for="Ingredient1">Ingredient 1</label>
-        <input asp-for="Ingredient1" />
+        <label class = "signLbl" asp-for="PublishDate">Publish Date</label>
+        <input class ="signInField" type="date" asp-for="PublishDate" />
     </div>
 
     <div>
-        <label asp-for="Ingredient2">Ingredient 2</label>
-        <input asp-for="Ingredient2" />
+        <label class = "signLbl" asp-for="Ingredient1">Ingredient 1</label>
+        <input class ="signInField" asp-for="Ingredient1" />
     </div>
 
     <div>
-        <label asp-for="Ingredient3">Ingredient 3</label>
-        <input asp-for="Ingredient3" />
+        <label class = "signLbl" asp-for="Ingredient2">Ingredient 2</label>
+        <input class ="signInField" asp-for="Ingredient2" />
     </div>
 
     <div>
-        <label asp-for="Ingredient4">Ingredient 4</label>
-        <input asp-for="Ingredient4" />
+        <label class = "signLbl" asp-for="Ingredient3">Ingredient 3</label>
+        <input class ="signInField" asp-for="Ingredient3" />
     </div>
 
     <div>
-        <label asp-for="Ingredient5">Ingredient 5</label>
-        <input asp-for="Ingredient5" />
+        <label class = "signLbl" asp-for="Ingredient4">Ingredient 4</label>
+        <input class ="signInField" asp-for="Ingredient4" />
     </div>
 
     <div>
-        <label asp-for="Ingredient6">Ingredient 6</label>
-        <input asp-for="Ingredient6" />
+        <label class = "signLbl" asp-for="Ingredient5">Ingredient 5</label>
+        <input class ="signInField" asp-for="Ingredient5" />
     </div>
 
     <div>
-        <label asp-for="Ingredient7">Ingredient 7</label>
-        <input asp-for="Ingredient7" />
+        <label class = "signLbl" asp-for="Ingredient6">Ingredient 6</label>
+        <input class ="signInField" asp-for="Ingredient6" />
     </div>
 
     <div>
-        <label asp-for="Step1">Step 1</label>
-        <textarea asp-for="Step1"></textarea>
+        <label class = "signLbl" asp-for="Ingredient7">Ingredient 7</label>
+        <input class ="signInField" asp-for="Ingredient7" />
     </div>
 
     <div>
-        <label asp-for="Step2">Step 2</label>
-        <textarea asp-for="Step2"></textarea>
+        <label class = "signLbl" asp-for="Step1">Step 1</label>
+        <textarea class="cookingStep" asp-for="Step1"></textarea>
     </div>
 
     <div>
-        <label asp-for="Step3">Step 3</label>
-        <textarea asp-for="Step3"></textarea>
+        <label class = "signLbl" asp-for="Step2">Step 2</label>
+        <textarea class="cookingStep" asp-for="Step2"></textarea>
     </div>
 
     <div>
-        <label asp-for="Step4">Step 4</label>
-        <textarea asp-for="Step4"></textarea>
+        <label class = "signLbl" asp-for="Step3">Step 3</label>
+        <textarea class="cookingStep" asp-for="Step3"></textarea>
+    </div>
+
+    <div>
+        <label class = "signLbl" asp-for="Step4">Step 4</label>
+        <textarea class="cookingStep" asp-for="Step4"></textarea>
     </div>
 
 
     <div>
-        <input type="submit" value="Update" class="edit" />
+        <input type="submit" value="Update" class="signInBtn" />
     </div>
 
 </form>

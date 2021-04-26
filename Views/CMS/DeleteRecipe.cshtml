@@ -4,14 +4,15 @@
 
 }
 
-<form method="post">
+    <h1 class="contentTitle">Delete @Model.Title?</h1>
+
+<form class="signIn" method="post">
 
     <input type="hidden" name="RecipeID" value="@Model.RecipeID" />
 
-    <p>Delete film @Model.Title?</p>
 
-    <p><input type="submit" value="Delete" class="delete" /></p>
+    <button type="submit" value="Delete" class="signInBtn">Delete</button>
 
-    <p><a asp-controller="CMS" asp-action="Index" class="add">Keep</a><br></p>
+    <button type="submit" asp-controller="CMS" asp-action="Index" class="signInBtn">Save</button>
 
 </form>
