@@ -1,6 +1,9 @@
 ﻿@model Register
 @{
     Layout = "_Layout";
+    ViewData["Title"] = "Register";
+
+}
 }
 
 <h1 class="contentTitle">Create New User Account</h1>
@@ -8,25 +11,25 @@
 
     <div>
         <label class="signLbl" asp-for="UserName">Username</label>
-        <input class ="signInField" type="text" asp-for="UserName" />
+        <input class="signInField" type="text" asp-for="UserName" />
     </div>
     <label class="signLbl" asp-for="Password"></label>
-    <input class ="signInField" type="password" asp-for="Password" />
+    <input class="signInField" type="password" asp-for="Password" />
     <div>
         <label class="signLbl" asp-for="ConfirmPassword">Confirm Password</label>
-        <input class ="signInField" type="password" asp-for="ConfirmPassword" />
+        <input class="signInField" type="password" asp-for="ConfirmPassword" />
     </div>
     <div>
-        <label class ="signLbl"asp-for="Email"></label>
-        <input class ="signInField" type="text" asp-for="Email" />
+        <label class="signLbl" asp-for="Email"></label>
+        <input class="signInField" type="text" asp-for="Email" />
     </div>
     <div>
-        <label class ="signLbl"asp-for="FullName">Full Name</label>
-        <input class ="signInField" type="text" asp-for="FullName" />
+        <label class="signLbl" asp-for="FullName">Full Name</label>
+        <input class="signInField" type="text" asp-for="FullName" />
     </div>
     <div>
-    <button class="signInBtn" type="submit">Create</button>
+        <button class="signInBtn" type="submit">Create</button>
     </div>
 
-  
+
 </form>

@@ -1,8 +1,12 @@
-﻿@{ 
+﻿@{
     Layout = "_CMS";
+    ViewData["Title"] = "CMS Page";
 }
 
-<h1 class="contentTitle">All Recipes</h1>
+
+
+<h1 class="contentTitle">Content Managment System</h1>
+<h2>Here you can edit or delete reciepes, only if you are registered!</h2>
 
 
 <table class="CmsTable">
@@ -16,9 +20,9 @@
     {
         <tr>
 
-        <td>@item.Title</td>
-        <td><a asp-controller="CMS" asp-action="UpdateRecipe" asp-route-id="@item.RecipeID" class="edit">Update</a></td>
-        <td><a asp-controller="CMS" asp-action="DeleteRecipe" asp-route-id="@item.RecipeID" class="delete">Delete</a></td>
+            <td>@item.Title</td>
+            <td><a asp-controller="CMS" asp-action="UpdateRecipe" asp-route-id="@item.RecipeID" class="edit">Update</a></td>
+            <td><a asp-controller="CMS" asp-action="DeleteRecipe" asp-route-id="@item.RecipeID" class="delete">Delete</a></td>
         </tr>
     }
 </table>

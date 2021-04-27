@@ -10,28 +10,14 @@
 {
 
     <div class="RecipeContainer">
-
-    <h2 class="RecipeTitle">@rec.Title</h2>
-
     <img class ="RecipeImage"src ="~/images/FoodImages/@rec.Image"/>
+        <div class="hoverEffect">
+            <div class="recTitleText">@rec.Title</div>
+        </div>
+
+
    
-    <ul class="RecipeIngredients">
-
-        @if(@rec.Ingredient1 != "") {    <li>@rec.Ingredient1</li>    }
-        @if(@rec.Ingredient2 != "") {    <li>@rec.Ingredient2</li>    }
-        @if(@rec.Ingredient3 != "") {    <li>@rec.Ingredient3</li>    }
-        @if(@rec.Ingredient4 != "") {    <li>@rec.Ingredient4</li>    }
-        @if(@rec.Ingredient5 != "") {    <li>@rec.Ingredient5</li>    }
-        @if(@rec.Ingredient6 != "") {    <li>@rec.Ingredient6</li>    }
-        @if(@rec.Ingredient7 != "") {    <li>@rec.Ingredient7</li>    }
-    </ul>
-        <div class="RecipeSteps">
-    @if(rec.Step1 != "") { <p>@rec.Step1</p>}
-    @if(rec.Step2 != "") { <p>@rec.Step2</p>}
-    @if(rec.Step3 != "") { <p>@rec.Step3</p>}
-    @if(rec.Step4 != "") { <p>@rec.Step4</p>}
-
-    </div>
+   
          </div>
 }
 </section>

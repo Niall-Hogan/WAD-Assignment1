@@ -1,26 +1,30 @@
 ﻿@model SignIn
+@{ 
+    ViewData["Title"] = "Sign In";
 
-<h1 class="contentTitle">Sign In</h1>
-<section >
-    <form class="signIn"asp-controller="Security" asp-action="SignIn" method="post">
-        <div>
-            <label class = "signLbl" asp-for="UserName">Username</label>
-            <input class ="signInField"type="text" asp-for="UserName" />
-        </div>
-        <div>
-            <label class = "signLbl" asp-for="Password">Password</label>
-            <input class ="signInField"type="password" asp-for="Password" />
-        </div>
-        <div>
-            <label class = "signLbl"asp-for="RememberMe">Remember Me</label>
-            <input type="checkbox" asp-for="RememberMe" />
-        </div>
-        <div>
-            <button type="submit" class="signInBtn">Sign In</button>
-            <button asp-controller="security" asp-action="register" type="submit" class="signInBtn">Create Account</button>
+  }
 
-        </div>
+    <h1 class="contentTitle">Sign In</h1>
+    <section>
+        <form class="signIn" asp-controller="Security" asp-action="SignIn" method="post">
+            <div>
+                <label class="signLbl" asp-for="UserName">Username</label>
+                <input class="signInField" type="text" asp-for="UserName" />
+            </div>
+            <div>
+                <label class="signLbl" asp-for="Password">Password</label>
+                <input class="signInField" type="password" asp-for="Password" />
+            </div>
+            <div>
+                <label class="signLbl" asp-for="RememberMe">Remember Me</label>
+                <input type="checkbox" asp-for="RememberMe" />
+            </div>
+            <div>
+                <button type="submit" class="signInBtn">Sign In</button>
+                <button asp-controller="security" asp-action="register" type="submit" class="signInBtn">Create Account</button>
+
+            </div>
 
 
-    </form>
-</section> 
+        </form>
+    </section> 

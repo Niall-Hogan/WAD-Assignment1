@@ -1,4 +1,13 @@
-﻿(function () {
+﻿import { Modal } from "../lib/bootstrap/dist/js/bootstrap.bundle";
+
+(function () {
+    $(".RecipeImage").on("click", function (ev) {
+        console.log("Clicked!");
+    });
+})();
+
+
+(function () {
     $(".burgerMenu").on("click", function (ev) {
         ev.preventDefault();
         $(this).toggleClass("animateBurger");
@@ -18,3 +27,4 @@
 
    
 })();
+
