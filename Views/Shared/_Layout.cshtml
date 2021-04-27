@@ -42,15 +42,15 @@
 
                 @if (User.Identity.IsAuthenticated)
                 {
-                    <form asp-controller="Security" asp-action="SignOut" method="post">
+                    <form id = "formContainer"asp-controller="Security" asp-action="SignOut" method="post">
                         <button type="submit" id="loginBtn">Log Out</button>
                     </form>
                 }
                 else
                 {
-                    <form asp-controller="Security" asp-action="SignIn" method="post">
+                    <form id = "formContainer" >
 
-                        <button id="loginBtn">Log In</button>
+                        <button asp-controller="Security" asp-action="SignIn" method="post" id="loginBtn">Log In</button>
                         </form>
                         }
 

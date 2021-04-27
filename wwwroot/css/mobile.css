@@ -153,95 +153,135 @@ a:visited {
     }
 }
 
-/* CMS Table styling*/
-.CmsTable {
-    font-family: Arial, Helvetica, sans-serif;
-    border-collapse: collapse;
-    width: 80%;
-    margin: auto;
+@media screen and (max-width: 720px) {
+
+    #loginBtn {
+        background-color: rgba(255, 255, 0, 0.9);
+        border: solid 2px white;
+        border-radius: 5px;
+        color: black;
+        padding: 5px 10px;
+        width:100%;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        margin:auto;
+        float:right;
+    }
 }
 
-
-    .CmsTable td, .CmsTable th {
-        border: 1px solid #ddd;
-        padding: 8px;
+    /* CMS Table styling*/
+    .CmsTable {
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 80%;
+        margin: auto;
     }
 
 
-    .CmsTable tr:nth-child(even) {
-        background-color: #f2f2f2;
+        .CmsTable td, .CmsTable th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+
+        .CmsTable tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+
+        .CmsTable tr:hover {
+            background-color: #ddd;
+        }
+
+
+        .CmsTable th {
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            background-color: #4CAF50;
+            color: white;
+        }
+
+    .signIn {
+        margin: auto;
+        width: 500px;
+        padding: 20px;
+        border: solid white 2px;
+        border-radius: 10px;
     }
 
-
-    .CmsTable tr:hover {
-        background-color: #ddd;
-    }
-
-
-    .CmsTable th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #4CAF50;
+    .signInBtn {
+        background-color: rgba(0, 0, 0, 0.9);
+        border: solid 2px white;
+        border-radius: 5px;
         color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        width: 90%;
+        margin: 15px;
     }
 
-.signIn {
-    margin: auto;
-    width: 500px;
-    padding: 20px;
-    border: solid white 2px;
-    border-radius: 10px;
-}
+    .signInField {
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin: 20px;
+    }
 
-.signInBtn {
-    background-color: rgba(0, 0, 0, 0.9);
-    border: solid 2px white;
-    border-radius: 5px;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    font-weight: bold;
-    width: 90%;
-    margin: 15px;
-}
+    .signLbl {
+        font-family: "Raleway", sans-serif;
+        color: black;
+        clear: left;
+        text-align: right;
+        margin-bottom: 20px;
+        font-weight: bold;
+    }
 
-.signInField {
-    width: 90%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin: 20px;
-}
+    .registerForm {
+        margin: auto;
+        width: 500px;
+    }
 
-.signLbl {
-    font-family: "Raleway", sans-serif;
-    color: black;
-    clear: left;
-    text-align: right;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
+@media screen and (max-width: 720px) {
 
-.registerForm {
-    margin: auto;
-    width: 500px;
+    .contentTitle {
+        position:relative;
+        top:-40px;
+        margin:auto;
+        width:300px;
+        text-align:center;
+    }
 }
+    .cookingStep {
+        width: 90%;
+        height: 150px;
+        resize: none;
+        margin: 20px;
+    }
 
 
-.contentTitle {
-    margin-left: 30px;
-}
 
-.cookingStep {
-    width: 90%;
-    height: 150px;
-    resize: none;
-    margin: 20px;
-}
+    @media screen and (max-width: 720px) {
+
+        .signInContainer {
+            margin: auto;
+            width: 90%;
+            position: relative;
+            top: -100px;
+        }
+    }
+
+    .mainContainer {
+        background-color: aliceblue;
+        margin-bottom: 50px;
+    }
