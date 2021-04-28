@@ -26,6 +26,37 @@ namespace WAD_Assignment1.Controllers
             return View();
         }
 
+        public IActionResult Search(String SearchString)
+
+        {
+
+            if (!string.IsNullOrEmpty(SearchString))
+
+            {
+
+
+                var Recipes = from m in _context.Recipes
+
+                            where m.Title.Contains(SearchString)
+
+                            select m;
+
+                List<Recipe> model = Recipes.ToList();
+
+                ViewData["SearchString"] = SearchString;
+
+                return View(model);
+
+            }
+            else
+            {
+                return View();
+            }
+
+
+
+        }
+
         public IActionResult AllRecipes()
         {
 
