@@ -33,6 +33,13 @@ namespace WAD_Assignment1.Controllers
             return View(model);
         }
 
+        public IActionResult RecipeDetails(int id)
+        {
+            Recipe model = _context.Recipes.Find(id);
+
+            return View(model);
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

@@ -1,0 +1,62 @@
+﻿@model WAD_Assignment.Models.Recipe
+@{
+    ViewData["Title"] = Model.Title;
+}
+
+
+<div class="detailsContainer">
+     <h1 class="contentTitle">@Model.Title</h1>
+    <div class="flexContainer">
+        <div class="imageContainer"><img class="RecipeImage" src="~/images/FoodImages/@Model.Image" /> </div>
+        <div class="imageContainer">
+            <h2>Info</h2>
+            <p>Cooking Time: @Model.CookingTime Minutes</p>
+            <p>Date Added: @Model.PublishDate</p>
+
+                <h2>Ingredients</h2>
+            <ul class="RecipeIngredients">
+                @if (@Model.Ingredient1 != "")
+                {
+                    <li>@Model.Ingredient1</li>
+                }
+                @if (@Model.Ingredient2 != "")
+                {
+                    <li>@Model.Ingredient2</li>
+                }
+                @if (@Model.Ingredient3 != "")
+                {
+                    <li>@Model.Ingredient3</li>
+                }
+                @if (@Model.Ingredient4 != "")
+                {
+                    <li>@Model.Ingredient4</li>
+                }
+                @if (@Model.Ingredient5 != "")
+                {
+                    <li>@Model.Ingredient5</li>
+                }
+                @if (@Model.Ingredient6 != "")
+                {
+                    <li>@Model.Ingredient6</li>
+                }
+                @if (@Model.Ingredient7 != "")
+                {
+                    <li>@Model.Ingredient7</li>
+                }
+            </ul>
+        </div>
+    </div>
+    <h2 class="contentTitle">Method</h2>
+        <div class="RecipeSteps">
+            @if (@Model.Step1 != "")
+            {<p>1) @Model.Step1</p>}
+            @if (@Model.Step2 != "")
+            {<p>2) @Model.Step2</p>}
+            @if (@Model.Step3 != "")
+            {<p>3) @Model.Step3</p>}
+            @if (@Model.Step4 != "")
+            {<p>4) @Model.Step4</p>}
+
+        </div>
+
+    </div>

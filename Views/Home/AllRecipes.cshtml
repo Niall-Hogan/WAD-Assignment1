@@ -6,18 +6,19 @@
 <h1 class="contentTitle">All Recipes</h1>
 
 <section class="RecipeFlexContainer">
-@foreach (var rec in Model)
-{
+    @foreach (var rec in Model)
+    {
 
-    <div class="RecipeContainer">
-    <img class ="RecipeImage"src ="~/images/FoodImages/@rec.Image"/>
-        <div class="hoverEffect">
-            <div class="recTitleText">@rec.Title</div>
+        <div class="RecipeContainer">
+            <img class="RecipeImage" src="~/images/FoodImages/@rec.Image" />
+            <div class="hoverEffect">
+                <div class="recTitleText">
+                <a id="linkToRec" asp-controller="Home" asp-action="RecipeDetails" asp-route-id="@rec.RecipeID">@rec.Title</a>
+                    </div>
+            </div>
+
         </div>
+       
+    }
 
-
-   
-   
-         </div>
-}
 </section>

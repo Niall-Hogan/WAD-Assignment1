@@ -1,14 +1,5 @@
-﻿import { Modal } from "../lib/bootstrap/dist/js/bootstrap.bundle";
-
-(function () {
-    $(".RecipeImage").on("click", function (ev) {
-        console.log("Clicked!");
-    });
-})();
-
-
-(function () {
-    $(".burgerMenu").on("click", function (ev) {
+﻿(function () {
+    $(".burgerMenu").on("click", (ev) => {
         ev.preventDefault();
         $(this).toggleClass("animateBurger");
         $("nav").slideToggle("fast");

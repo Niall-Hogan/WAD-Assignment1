@@ -7,6 +7,9 @@ h2,
 p{
     font-family: "Raleway", sans-serif;
 }
+
+
+
 @media screen and (min-width: 720px) {
 
     .signInContainer {
@@ -150,6 +153,19 @@ p{
         height:auto;
     }
 
+.RecipeIngredients {
+    list-style-type:square;
+    font-family: "Raleway", sans-serif;
+}
+.RecipeSteps {
+    width:80%;
+    margin:auto;
+}
+.RecipeIngredients li {
+    line-height:1.5;
+    color:black;
+}
+
 .hoverEffect {
     position: absolute;
     border-radius:5px;
@@ -163,15 +179,25 @@ p{
     transition: .2s ease-in-out
 }
 
+
+
 .recTitleText {
     width:90%;
-    color: white;
     font-family: "Raleway", sans-serif;
     text-align:center;
     position: absolute;
     top:120px;
     left:20px;
 }
+
+
+    .recTitleText a:any-link {
+        color: white;
+        text-decoration: none;
+        padding:90px 10px;
+    }
+
+
     @media screen and (min-width: 720px) {
         footer {
             background-image: url(../images/header.jpeg);
@@ -276,3 +302,14 @@ p{
         background-color: aliceblue;
         margin-bottom: 50px;
     }
+
+.imageContainer {
+    width: 400px;
+    margin:0;
+    border:0;
+}
+
+.flexContainer{
+    display:flex;
+    justify-content:space-evenly;
+}
