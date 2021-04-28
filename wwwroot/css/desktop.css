@@ -286,7 +286,9 @@ p{
         width: 500px;
     }
 
-
+    .MethodTitle{
+        margin-left:30px;
+    }
     .contentTitle {
         margin-left: 30px;
     }
