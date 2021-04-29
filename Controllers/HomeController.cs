@@ -41,6 +41,8 @@ namespace WAD_Assignment1.Controllers
 
                             select m;
 
+                
+
                 List<Recipe> model = Recipes.ToList();
 
                 ViewData["SearchString"] = SearchString;
@@ -62,6 +64,11 @@ namespace WAD_Assignment1.Controllers
 
             List<Recipe> model = _context.Recipes.ToList();
             return View(model);
+        }
+
+        public IActionResult ShoppingList()
+        {
+            return View();
         }
 
         public IActionResult RecipeDetails(int id)

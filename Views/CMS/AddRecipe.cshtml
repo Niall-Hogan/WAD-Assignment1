@@ -7,15 +7,15 @@
 
 <h1 class="contentTitle">Add Recipe</h1>
 
-<form class="signIn" asp-controller="CMS" asp-action="AddRecipe">
+<form class="signIn"  onsubmit="return validateForm()" asp-controller="CMS" asp-action="AddRecipe">
     <div>
         <label class="signLbl" asp-for="Title">Recipe Title</label>
-        <input class="signInField" type="text" asp-for="Title" />
+        <input class="signInField" name="title" type="text" asp-for="Title" required/>
     </div>
 
     <div>
         <label class="signLbl" asp-for="Image">Recipe Image</label>
-        <input class="signInField" type="file" id="img" name="img" accept="image/*" asp-for="Image" />
+        <input class="signInField" type="text" asp-for="Image" required/>
     </div>
 
     <div>
@@ -80,7 +80,18 @@
 
 
     <div>
-        <input type="submit" value="Add" class="signInBtn" />
+        <input type="submit" value="Submit" class="signInBtn" />
     </div>
 
 </form>
+
+<script>
+    function validateForm() {
+
+        console.log("triggered");
+        var x = document.forms["signIn"]["Title"].value;
+        if (x == "") {
+            alert("Name must be filled out");
+            return false;
+        }
+    }</script>

@@ -10,8 +10,8 @@ using WAD_Assignment1.Models;
 namespace WAD_Assignment1.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20210423183313_Initial")]
-    partial class Initial
+    [Migration("20210428163757_Second")]
+    partial class Second
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {

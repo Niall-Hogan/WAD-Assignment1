@@ -1,21 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\niall\\source\\repos\\WAD-Assignment1\\WAD-Assignment1\\WAD-Assignment1.csproj": {}
+    "C:\\Users\\LabStudent-55-504266\\Desktop\\WAD-Assignment1\\WAD-Assignment1\\WAD-Assignment1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\niall\\source\\repos\\WAD-Assignment1\\WAD-Assignment1\\WAD-Assignment1.csproj": {
+    "C:\\Users\\LabStudent-55-504266\\Desktop\\WAD-Assignment1\\WAD-Assignment1\\WAD-Assignment1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\niall\\source\\repos\\WAD-Assignment1\\WAD-Assignment1\\WAD-Assignment1.csproj",
+        "projectUniqueName": "C:\\Users\\LabStudent-55-504266\\Desktop\\WAD-Assignment1\\WAD-Assignment1\\WAD-Assignment1.csproj",
         "projectName": "WAD-Assignment1",
-        "projectPath": "C:\\Users\\niall\\source\\repos\\WAD-Assignment1\\WAD-Assignment1\\WAD-Assignment1.csproj",
-        "packagesPath": "C:\\Users\\niall\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\niall\\source\\repos\\WAD-Assignment1\\WAD-Assignment1\\obj\\",
+        "projectPath": "C:\\Users\\LabStudent-55-504266\\Desktop\\WAD-Assignment1\\WAD-Assignment1\\WAD-Assignment1.csproj",
+        "packagesPath": "C:\\Users\\LabStudent-55-504266\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\LabStudent-55-504266\\Desktop\\WAD-Assignment1\\WAD-Assignment1\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
         "configFilePaths": [
-          "C:\\Users\\niall\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\LabStudent-55-504266\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -26,7 +30,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -38,7 +41,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
@@ -77,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }
